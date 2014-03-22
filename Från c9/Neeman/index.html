@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="sv">
+    
+    <head>
+        <meta charset="utf-8" />
+        <title>Home</title>
+        
+        <!--IE-fix-->
+        <script>
+            document.createElement("header");
+            document.createElement("footer");
+            document.createElement("article");
+            document.createElement("main");
+            document.createElement("section");
+            document.createElement("nav");
+            document.createElement("aside");
+            document.createElement("figure");
+        </script>
+
+        <!-- Viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!-- Iconer för Apple-bokmärke -->
+        <link rel="apple-touch-icon" sizes="152x152" href="pics/apple-touch-icons/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="pics/apple-touch-icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="pics/apple-touch-icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="pics/apple-touch-icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="pics/apple-touch-icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="pics/apple-touch-icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="57x57" href="pics/apple-touch-icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon" href="pics/apple-touch-icons/apple-touch-icon.png" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="pics/favicon.ico" type="image/x-icon" />
+        
+        <link rel="stylesheet" type="text/css" media="all" href="css/mobile.css"/>
+    </head>
+    
+    <body>
+        <div id="container">
+            <header class="header">
+                <h1>EXCELLENCE MATTERS.</h1>
+                <h2>Improve profitability using superior employee adoption metrics.</h2>
+            </header>
+
+            <nav>
+                <fieldset id="mobile" class="mobile">
+                    <select onchange="window.location=this.value" tabindex="1">
+                        <option>Navigation</option>
+                        <option value="index.html">Home</option>
+                        <option value="pages/about.html">About us</option>
+                        <option value="pages/solutions.html">Solutions</option>
+                        <option value="pages/references.html">References</option>
+                        <option value="pages/contact.html">Contact</option>
+                    </select>
+                </fieldset>
+                <ul id="screen">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/about.html">About us</a></li>
+                    <li><a href="pages/solutions.html">Solutions</a></li>
+                    <li><a href="pages/references.html">References</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <article>
+                    <p><span class="fet">NEEMAN</span> provides highly valuable, cost effective and straightforward adoption progress measuring metrics and the Adoption Mass Index assessing the quality of your IT change initiatives for mid-sized to large companies across the globe.</p>
+                    <p>The Adoption Mass Index (AMI) is an exciting new tool in the change management field. The index focuses on the employee’s adoption of processes, and how barriers inherent in change affect their adoption and subsequently have a negative impact on the change initiative.</p>
+                    <p>The Progress Success Metrics are an improvement tool allowing you to measure change management efficiency and process adoption. You will be able to extract best practices and apply them where you have under performance to excel in process adoption.</p>
+                    <footer>
+                        <h1>NEEMAN</h1>
+                    </footer>
+                </article>
+            </main>
+
+        </div>
+    </body>

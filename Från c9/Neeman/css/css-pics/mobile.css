@@ -1,0 +1,457 @@
+@import url(http://fonts.googleapis.com/css?family=Jura);
+
+/*=====Reset CSS ===========================================================*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */ /* Lagt till main! */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*==========================================================================*/
+@media all {
+    img {
+        max-width: 100%;
+    }
+
+    /*===== Font ===============================================================*/
+    body {
+        font-family: 'Jura', Courier, sans-serif;
+        font-size: 1em;
+        color: #000;
+        line-height: 1.2em;
+    }
+
+    /*===== Body ===============================================================*/
+    body {
+        background-color: #000;
+        margin: 5% auto;
+        max-width: 960px;
+        overflow: auto;
+        overflow-x: hidden;
+        padding: 0.25em;
+    }
+
+    /*===== Container ==========================================================*/
+    #container {
+        background-color: #fff;
+        border: 3px #000 solid;
+        margin: auto;
+        overflow: auto;
+        padding: 0 0 10% 0;
+        width: auto;
+    }
+
+    /*===== Header =============================================================*/
+    header {
+        background-color: transparent;
+        float: none;
+        margin: 10% 5% 5% 5%;
+        width: 90%;
+    }
+
+        header h1 {
+            font-family: 'Futura', 'Calibri', 'sans-serif';
+            font-size: 3.3em;
+            font-weight: bold;
+            line-height: 1em;
+        }
+
+        header h2 {
+            font-family: 'Century Gothic', 'Segoe UI', 'sans-serif';
+            font-size: 1em;
+            font-weight: bold;
+        }
+
+    /*===== Nav ================================================================*/
+    nav {
+        background-color: transparent;
+        float: left;
+        overflow: auto;
+    }
+
+    /*===== Wrapper ============================================================*/
+    #wrapper {
+        background-color: transparent;
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    /*===== Main ===============================================================*/
+    main {
+        background-color: transparent;
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    /*===== Article ============================================================*/
+    article {
+        float: none;
+        font-family: 'Jura', Courier, sans-serif;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        margin: 0 0 5em 5%;
+        width: 90%;
+    }
+
+        article p {
+            margin: 0 0 1.5em 0;
+        }
+
+    /*===== Section ============================================*/
+    section {
+        float: none;
+        margin: 0 0 1em 0;
+    }
+
+        section header {
+            margin: 1em 0 0 0;
+            width: 100%;
+        }
+
+        section h1 {
+            font-family: 'Century Gothic', 'Segoe UI', 'sans-serif';
+            font-size: 1.2em;
+            margin: 2em 0 0.5em 0;
+        }
+
+        /*===== Listor =============================================*/
+
+        article ul, section ul {
+            list-style: none;
+            margin: 0 auto 1.5em auto;
+            width: 85%;
+        }
+
+            article ul li:before, section ul li:before {
+                content: "-";
+                display: inline-block;
+                margin: 0 0 0 -1em;
+                width: 1em;
+            }
+
+            article ul li, section ul li {
+                display: table-row;
+                margin: 0;
+            }
+
+    /*===== Specialtext ========================================*/
+    .fet {
+        font-family: 'Futura', 'Calibri', 'sans-serif';
+        font-weight: bold;
+    }
+
+    .italic {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    /*===== Footer =============================================================*/
+    footer {
+        background-color: transparent;
+        float: right;
+        margin: 0 0 1em 0;
+    }
+
+        footer h1 {
+            color: #B9DA2E;
+            float: right;
+            font-family: 'Futura', 'Calibri', 'sans-serif';
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+
+    /*===== Files/aside ========================================================*/
+    .pdf-files li {
+        display: block;
+    }
+
+        .pdf-files li:before {
+            content: url("css-pics/pdf-icon16.png");
+            margin: 0 1em 0 0;
+            max-height: 16px;
+            max-width: 16px;
+            vertical-align: text-top;
+        }
+
+    .pdf-files a {
+        color: #B9DA2E;
+        font-family: "Century Gothic", "Candara", sans-serif;
+        font-size: 0.95em;
+    }
+
+    /*===== Form ===============================================================*/
+    .card {
+        float: left;
+        margin: 3% 0 5% 0;
+        max-width: 280px;
+    }
+
+        .card img {
+            max-width: 100%;
+        }
+
+    form {
+        float: left;
+        margin: 0 auto;
+        overflow: auto;
+        min-width: 16.5em;
+    }
+
+        form fieldset /* "Ram" */ {
+            border: solid #000 1px;
+            border-radius: 5px;
+            margin: 1% 1em 5% 0;
+        }
+
+        form legend {
+            font-family: "Century Gothic", "Candara", sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin: 0 0 0 5%;
+            padding: 2px 2px 2px 3px;
+        }
+
+        form label {
+            float: left;
+            font-size: 1em;
+            margin: 1% 1% 1% 5%;
+        }
+
+        form textarea, input {
+            border: 1px solid #494E38;
+            border-radius: 5px;
+            float: left;
+            font-family: "Rockwell", "Candara", sans-serif;
+            font-style: italic;
+            font-size: 0.8em;
+            letter-spacing: 0.15em;
+            margin: 0 0 3% 5%;
+            min-width: 80%;
+            padding: 2%;
+        }
+
+        form textarea {
+            margin: 0 0 5% 5%;
+            min-height: 8em;
+        }
+}
+/*===== Skillnad ===========================================================*/
+@media only screen and (max-width: 480px)
+{
+    .pdf-files ul 
+    {
+        float: left;
+        line-height: 1.5em;
+        margin: 0 0 1em 1em;
+        width: 100%;
+    }
+
+    footer 
+    {
+        font-size: smaller;
+    }
+    nav 
+    {
+        margin: 3% 5% 10% 5%;
+        width: 100%
+    }
+
+    #screen
+    {
+        left: -9999px;
+        position: absolute;
+    }
+
+    #mobile 
+    {
+        width: 100%;
+    }
+
+        #mobile fieldset
+        {
+            margin: 3% 0 10% 0;
+            width: 65%;
+        }
+}
+
+@media only screen and (min-width: 481px)
+{
+     main.solutions
+    {
+        background-color: transparent;
+        float: left;
+        margin: 0;
+        width: 80%;
+    }
+
+    .pdf-files ul 
+    {
+        float: right;
+        line-height: 1.5em;
+        margin: 0 5em 0 0.5em;
+        width: auto;
+    }
+
+    nav 
+    {
+        margin: 0 20% 8% 20%;
+        width: 60%;
+    }
+
+    #screen 
+    {
+        margin: auto;
+        position: absolute;
+        width: 100%;
+    }
+    
+        #screen ul
+        {
+            margin: 0 auto;
+            position: absolute;
+            width: 100%;
+        }
+    
+        #screen li
+        {
+            display: inline;
+            font-family: "Century Gothic", "Candara",  sans-serif;
+            font-size: 0.95em;  
+            font-weight: 900; 
+            letter-spacing: 1px;
+            padding: 2% 2% 2% 0;
+        }   
+    
+        #screen ul li a
+        {
+            display: block;
+            margin: auto;
+        }
+    
+        #screen li a:link{color: #000; font-weight: bold}
+        #screen li a:visited{color: #000; }
+        #screen li a:hover{font-size: 1.1em; }
+        #screen li a.active{font-size: 1.1em; font-weight: bolder; color: #969696; }
+    
+    #mobile 
+    {
+        border: none;
+        left: -9999px;
+        position: absolute;
+    } 
+}
+
+@media only screen and (min-width: 481px) 
+{
+    #wrapper2 
+    {
+        background-color: transparent;
+        float: none;
+        margin: auto;
+        width: 45%;
+    }
+
+        section.cont {margin: auto 3em auto 0; }
+}
+
+
+@media only screen and (min-width: 769px) 
+{
+    #wrapper2 {width: 95%; }
+
+        section.cont {float: left; margin: 0.75em 3em 0 0; }
+}
+
+@media only screen and (min-width: 1024px) 
+{
+    #wrapper2 {width: 80%; }
+}
+/*===== Utskrift ===========================================================*/
+@media print {
+    nav, form, .pdf-files {display: none; }
+    
+    #container {
+        border: none;
+        padding: 0;
+    }
+
+    body {
+        display: inline;
+        font-family: 'Jura', Courier, sans-serif;
+        font-size: 0.8em;
+        line-height: 1em;
+        margin: auto;
+        max-width: 1800px;
+    }
+
+    header {margin: 5%;}
+    footer {margin: 0; }
+
+    h1, h2 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 343px;
+        margin: 0;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    ul {
+        page-break-before: avoid;
+    }
+
+   
+
+    main {
+        max-width: 1800px;
+        overflow: auto;
+    }
+}
